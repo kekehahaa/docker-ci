@@ -4,7 +4,7 @@ from app import app
 from fastapi.testclient import TestClient
 
 @pytest.fixture
-def test_home_func():
+def client():
     return TestClient(app)
 
 class TestHomeEndpoint:
